@@ -80,7 +80,7 @@ Currently studying aerospace engineering, concentrating in autonomous vehicle sy
 * Highly Knowledgeable
 
 
-* On the dockett
+* On the docket
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![MySQL][sql-shield]][sql-url]
 &nbsp;&nbsp;&nbsp;&nbsp;[![htmx][htmx-shield]][htmx-url]
