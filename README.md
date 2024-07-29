@@ -38,7 +38,7 @@
 
 Currently studying aerospace engineering, concentrating in autonomous vehicle systems at Barrett, The Honors College at ASU. Current software engineer intern for GDMS
 
-[Personal repo](https://github.com/zak-steenhoek/zak-steenhoek)
+[Personal Repo](https://github.com/zak-steenhoek/zak-steenhoek)
 
 
 
