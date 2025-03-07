@@ -35,8 +35,10 @@
 <!-- ABOUT ME -->
 
 ## About Me
+Motivated aerospace engineering student with expertise in C++, MATLAB, and autonomous systems. A strong communicator and collaborative team player, eager to apply leadership and problem-solving skills to drive mission-critical projects and innovative solutions in the defense industry.
 
-Currently studying aerospace engineering, concentrating in autonomous vehicle systems ASU. Current engineering intern for GDMS
+* Studying aerospace engineering at Arizona State University, concentrating in autonomous vehicle systems
+* Working as a radio systems engineering intern for General Dynamics Mission Systems
 
 [Personal Repo](https://github.com/zak-steenhoek/zak-steenhoek)
 
@@ -46,8 +48,15 @@ Currently studying aerospace engineering, concentrating in autonomous vehicle sy
 
 ## Experience
 
+### Classes
+
+* Aerodynamics
+* Systems & Controls
+* Structural Mechanics
+
 ### Projects
 
+* Capstone
 * [Autonomous Micromouse Robot](https://github.com/zak-steenhoek/Micromouse-Robot)
 * Neural Network Image Recognition
 * FE Bone Strength Analysis
@@ -62,23 +71,23 @@ Currently studying aerospace engineering, concentrating in autonomous vehicle sy
 * Bash 
 * Other 
 
-### Languages
+### Programs
 
 * Beginner
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![HTML][html-shield]][html-url]
-
+&nbsp;&nbsp;&nbsp;&nbsp;[![ANSYS][ansys-shield]][ansys-url]
+&nbsp;&nbsp;&nbsp;&nbsp;[![SolidWorks][sw-shield]][sw-url]
 
 * Proficient
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![C++][cpp-shield]][cpp-url]
 &nbsp;&nbsp;&nbsp;&nbsp;[![Python][python-shield]][python-url]
-&nbsp;&nbsp;&nbsp;&nbsp;[![SolidWorks][sw-shield]][sw-url]
 &nbsp;&nbsp;&nbsp;&nbsp;[![Bash][bash-shield]][bash-url]
-
 
 * Highly Knowledgeable
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![MATLAB][matlab-shield]][matlab-url]
 
 * On the docket
 
@@ -93,7 +102,7 @@ Currently studying aerospace engineering, concentrating in autonomous vehicle sy
 
 * Zakary Steenhoek
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> zasteenhoek@gmail.com
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email --> zasteenhoek@gmail.com
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;[![Repos][repos-shield]][repos-url]
@@ -117,6 +126,9 @@ Currently studying aerospace engineering, concentrating in autonomous vehicle sy
 
 
 <!-- EXPERIENCE -->
+[matlab-shield]: https://img.shields.io/badge/-MATLAB-black.svg?style=for-the-badge&logo=matrix&logoColor=D7CFB7&logoSize=auto&labelColor=463C1E&color=463C1E
+[matlab-url]: https://www.mathworks.com/products/matlab.html
+
 [python-shield]: https://img.shields.io/badge/-Python-black.svg?logoSize=auto&style=for-the-badge&logo=python&logoColor=D7CFB7&labelColor=463C1E&color=463C1E
 [python-url]: https://www.python.org/
 
@@ -125,6 +137,9 @@ Currently studying aerospace engineering, concentrating in autonomous vehicle sy
 
 [sw-shield]: https://img.shields.io/badge/-SolidWorks-black.svg?logoSize=auto&style=for-the-badge&logo=dassaultsystemes&logoColor=D7CFB7&labelColor=463C1E&color=463C1E
 [sw-url]: https://my.solidworks.com/
+
+[ansys-shield]: https://img.shields.io/badge/-ANSYS-black?style=for-the-badge&logo=ansys&logoColor=D7CFB7&labelColor=463C1E&color=463C1E
+[ansys-url]: https://www.ansys.com/
 
 [bash-shield]: https://img.shields.io/badge/-GNU&nbsp;Bash-black.svg?logoSize=auto&style=for-the-badge&logo=gnubash&logoColor=D7CFB7&labelColor=463C1E&color=463C1E
 [bash-url]: https://www.gnu.org/software/bash/
