@@ -41,36 +41,34 @@ Motivated aerospace engineering student with expertise in C++, MATLAB, and auton
 * Working as a radio systems engineering intern for General Dynamics Mission Systems
 
 
-[Resume](https://github.com/zak-steenhoek/zak-steenhoek/blob/f98b83c3a561f58f5598d50d225ed4e3843bacec/Documents/Z.Steenhoek_Resume-1.25.pdf)
+--> [Resume](https://github.com/zak-steenhoek/zak-steenhoek/blob/f98b83c3a561f58f5598d50d225ed4e3843bacec/Documents/Z.Steenhoek_Resume-1.25.pdf)
 
-[Personal Repo](https://github.com/zak-steenhoek/zak-steenhoek)
+--> [Personal Repo](https://github.com/zak-steenhoek/zak-steenhoek)
 
 
 <!-- EXPERIENCE -->
 
 ## Experience
 
-### Classes
+### Coursework
 
-* [Aerodynamics](https://github.com/zak-steenhoek/zak-steenhoek/tree/a460a303c8edc354d5d3b51d88471e3161f383e8/School/Aerodynamics)
+* [Aerodynamics](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Coursework/Aerodynamics)
+* [Structural Mechanics](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Coursework/Structural%20Mechanics)
 * Systems & Controls
-* Structural Mechanics
 
 ### Projects
 
 * Capstone
 * [Autonomous Micromouse Robot](https://github.com/zak-steenhoek/Micromouse-Robot)
 * Neural Network Image Recognition
-* FE Bone Strength Analysis
 * myFinancial (Coming soon...)
 * Private Home Network (Coming Soon...)
 
-
-### My Stuff
+### Code
 
 * [MATLAB](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Code/MATLAB) 
-* Python 
-* Bash 
+* [Python](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Code/Python)
+* Scripting
 * Other 
 
 ### Programs
