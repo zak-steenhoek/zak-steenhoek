@@ -52,8 +52,8 @@ Motivated aerospace engineering student with expertise in C++, MATLAB, and auton
 
 ### Coursework
 
-* Aerodynamics
-* Structural Mechanics
+* [Aerodynamics](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Coursework/Aerodynamics)
+* [Structural Mechanics](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Coursework/Structural%20Mechanics)
 * Systems & Controls
 
 ### Projects
