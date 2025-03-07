@@ -56,13 +56,6 @@ Motivated aerospace engineering student with expertise in C++, MATLAB, and auton
 * Systems & Controls
 * Structural Mechanics
 
-### Software
-
-* [MATLAB](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Code/MATLAB) 
-* Python 
-* Scripting
-* Other 
-
 ### Projects
 
 * Capstone
@@ -71,6 +64,12 @@ Motivated aerospace engineering student with expertise in C++, MATLAB, and auton
 * myFinancial (Coming soon...)
 * Private Home Network (Coming Soon...)
 
+### Code
+
+* [MATLAB](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Code/MATLAB) 
+* Python 
+* Scripting
+* Other 
 
 ### Programs
 
