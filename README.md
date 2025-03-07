@@ -52,7 +52,7 @@ Motivated aerospace engineering student with expertise in C++, MATLAB, and auton
 
 ### Classes
 
-* Aerodynamics
+* [Aerodynamics](https://github.com/zak-steenhoek/zak-steenhoek/tree/a460a303c8edc354d5d3b51d88471e3161f383e8/School/Aerodynamics)
 * Systems & Controls
 * Structural Mechanics
 
