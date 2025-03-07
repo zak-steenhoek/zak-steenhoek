@@ -40,10 +40,10 @@ Motivated aerospace engineering student with expertise in C++, MATLAB, and auton
 * Studying aerospace engineering at Arizona State University, concentrating in autonomous vehicle systems
 * Working as a radio systems engineering intern for General Dynamics Mission Systems
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My resume --> [Resume](https://github.com/zak-steenhoek/blob/main/Documents/Z.Steenhoek_Resume-1.25.pdf)
+
+[Resume](https://github.com/zak-steenhoek/zak-steenhoek/blob/f98b83c3a561f58f5598d50d225ed4e3843bacec/Documents/Z.Steenhoek_Resume-1.25.pdf)
 
 [Personal Repo](https://github.com/zak-steenhoek/zak-steenhoek)
-
 
 
 <!-- EXPERIENCE -->
