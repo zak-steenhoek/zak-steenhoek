@@ -18,7 +18,7 @@ function [fullPath] = buildPath(leaf, root)
 %
 
 % Root path to MATLAB folder lives here
-rootPath = 'C:\Users\zaste\OneDrive\Software\MATLAB\';
+rootPath = '<lol>';
 
 % Determine HERE, ROOT
 if (~exist('root', 'var'))
