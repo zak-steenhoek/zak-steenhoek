@@ -9,24 +9,62 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[![Instagram][ig-shield]][ig-url]
 
 
-<!-- ME -->
+<!-- Header -->
 
-<h1 align="center">Python Code</h1>
+<h1 align="center">Code</h1>
+
+<!-- SUMMARY -->
+
+<details>
+  <summary>TL;DR</summary>
+  <ol>
+    <li><a href="#about">About</a></li>
+    <li>
+      <a href="#contents">Contents</a>
+      <ul>
+        <li><a href="#matlab">MATLAB</a></li>
+		<li><a href="#python">Python</a></li>
+        <li><a href="#scripting">Scripting</a></li>
+      </ul>
+    </li>
+	<li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
 <!-- ABOUT -->
 
 ## About
 
-Some of my Python code. 
+Some of my code. Currently includes some MATLAB, Python, and bash scripts. 
+
+Probably definitely not up-to-date. I try my best
 
 
-<!-- Map -->
+<!-- Contents -->
 
-## Map
+## Contents
 
-### Micromouse Robot
+### MATLAB
 
-Simulation of an autonomous maze-solving robot
+Most of my work, ASU pushes MATLAB pretty hard.
+
+* aerodynamics: Related to my low-speed or high-speed aerodynamics courses
+* functions: Workflow and general sanity. Plus a little fun
+* structures: Related to my aircraft structures and materials classes
+
+### Python
+
+Includes a couple class projects.
+
+* micromouse-robot: Autonomous pathfinding & maze-solving robot simulation. More details can be found in the dedicated repo: [Micromouse-Robot](https://github.com/zak-steenhoek/Micromouse-Robot)
+* neural-network: My attempt at creating and training a neural network to classify images of numbers
+
+### Scripting
+
+Some of my own workflow automation, in an attempt to become familiar with bash scripting. Why spend 15 minutes doing something when you can spend 6 hours failing to automate it? I currently use the cygwin64 terminal and Notepad++
+
+* .bashrc: Personal environment config
+* MakeNew*: Create and structure new files
 
 
 <!-- CONTACT -->
