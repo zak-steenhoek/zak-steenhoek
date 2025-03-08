@@ -157,8 +157,8 @@ alias src='source ~/.bashrc'
 		local target_path=${1:-$(pwd)}
 		local current_path=$(pwd)
 		
-		# Run location of this MakeNew script, currently lives in ~/Common/Scripts/. THIS CAN/SHOULD CHANGE
-		~/Common/Scripts/MakeNewBash.bash $target_path
+		# Run location of this MakeNew script, currently lives in ~/bin
+		~/bin/MakeNewBash.bash $target_path
 		
 		# Return to calling dir
 		cd $current_path
@@ -170,8 +170,48 @@ alias src='source ~/.bashrc'
 		local target_path=${1:-$(pwd)}
 		local current_path=$(pwd)
 		
-		# Run location of this MakeNew script, currently lives in ~/Common/Scripts/. THIS CAN/SHOULD CHANGE
-		~/Common/Scripts/MakeNewText.bash $target_path
+		# Run location of this MakeNew script, currently lives in ~/bin
+		~/bin/MakeNewText.bash $target_path
+		
+		# Return to calling dir
+		cd $current_path
+	}
+	
+	# Creates a new MATLAB function with header in the default or specified dir
+	newMatF() {
+		# ROOT_PATH: MATLAB functions dir
+		local ROOT_PATH="/cygdrive/c/Users/zaste/OneDrive/Software/MATLAB/functions"
+		
+		# Grab specified location, if provided, as well as current working dir
+		if [ -n "$1" ]; then
+			local target_path="${ROOT_PATH}/$1"
+		else
+			local target_path="${ROOT_PATH}/bin"
+		fi
+		local current_path=$(pwd)
+		
+		# Run location of this MakeNew script, currently lives in ~/bin
+		~/bin/MakeNewMATLABFunc.bash $target_path
+		
+		# Return to calling dir
+		cd $current_path
+	}
+	
+	# Creates a new MATLAB script with header in the default or specified dir
+	newMatS() {
+		# ROOT_PATH: MATLAB software dir
+		local ROOT_PATH="/cygdrive/c/Users/zaste/OneDrive/Software/MATLAB"
+		
+		# Grab specified location, if provided, as well as current working dir
+		if [ -n "$1" ]; then
+			local target_path="${ROOT_PATH}/$1"
+		else
+			local target_path="${ROOT_PATH}/bin"
+		fi
+		local current_path=$(pwd)
+		
+		# Run location of this MakeNew script, currently lives in ~/bin
+		~/bin/MakeNewMATLABScript.bash $target_path
 		
 		# Return to calling dir
 		cd $current_path
@@ -183,7 +223,7 @@ alias src='source ~/.bashrc'
 		local target_path=${1:-$(pwd)}
 		local current_path=$(pwd)
 		
-		# Run location of this MakeNew script, currently lives in ~/Common/Scripts/. THIS CAN/SHOULD CHANGE
+		# Run location of this MakeNew script, currently lives in ~/bin
 		#~/Common/Scripts/MakeNew<what>.bash $target_path
 		echo "Function not implimented yet..."
 		
@@ -197,7 +237,7 @@ alias src='source ~/.bashrc'
 		local target_path=${1:-$(pwd)}
 		local current_path=$(pwd)
 		
-		# Run location of this MakeNew script, currently lives in ~/Common/Scripts/. THIS CAN/SHOULD CHANGE
+		# Run location of this MakeNew script, currently lives in ~/bin
 		#~/Common/Scripts/MakeNew<what>.bash $target_path
 		echo "Function not implimented yet..."
 		

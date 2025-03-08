@@ -9,38 +9,37 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[![Instagram][ig-shield]][ig-url]
 
 
-<!-- ME -->
+<!-- Header -->
 
 <h1 align="center">MATLAB Code</h1>
 
-<!-- ABOUT -->
+<!-- Contents -->
 
-## About
-
-Some of my MATLAB code. Includes some school projects, home-grown functions, and a little fun.
-
-Probably definitely not up-to-date. I try my best
-
-
-<!-- EXPERIENCE -->
-
-## Map
+## Contents
 
 ### functions
 
-workflow support to maintain some sanity
+Workflow support to maintain some sanity
 
-* util: general utility
-* aero: related to low speed or high speed aerodynamics
-* plot: some helpful bells & whistles
-* fun: duh
+* aero: Related to low-speed or high-speed aerodynamics
+* fun: Wanna play tic-tac-toe?
+* plot: Some helpful bells & whistles
+* struct: Related to my aircraft structures and materials classes
+* util: general help
 
-### Aero
+### Aerodynamics
 
-Scripts and projects related to my aero classes
+Assignments related to my aero classes
 
 * labs
-* homeworks
+* homework
+
+### Structures
+
+Assignments related to my structures classes
+
+* labs
+* projects
 
 <!-- CONTACT -->
 

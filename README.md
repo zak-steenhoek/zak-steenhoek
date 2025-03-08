@@ -22,11 +22,13 @@
     <li>
       <a href="#experience">Experience</a>
       <ul>
-        <li><a href="#projects">Projects</a></li>
-	<li><a href="#my-stuff">My Stuff</a></li>
-        <li><a href="#languages">Languages</a></li>
+        <li><a href="#coursework">Coursework</a></li>
+		<li><a href="#projects">Projects</a></li>
+        <li><a href="#code">Code</a></li>
+		<li><a href="#programs">Programs</a></li>
       </ul>
     </li>
+	<li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -54,26 +56,24 @@ Motivated aerospace engineering student with expertise in C++, MATLAB, and auton
 
 * [Aerodynamics](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Coursework/Aerodynamics)
 * [Structural Mechanics](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Coursework/Structural%20Mechanics)
-* Systems & Controls
+* Control Systems
 
 ### Projects
 
 * Capstone
 * [Autonomous Micromouse Robot](https://github.com/zak-steenhoek/Micromouse-Robot)
 * Neural Network Image Recognition
-* myFinancial (Coming soon...)
 * Private Home Network (Coming Soon...)
 
 ### Code
 
-* [MATLAB](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Code/MATLAB) 
-* [Python](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/Code/Python)
-* Scripting
-* Other 
+* [MATLAB](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/code/MATLAB) 
+* [Python](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/code/python)
+* [Scripting](https://github.com/zak-steenhoek/zak-steenhoek/blob/main/code/scripting)
 
 ### Programs
 
-* Beginner
+* Familiar
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![HTML][html-shield]][html-url]
 &nbsp;&nbsp;&nbsp;&nbsp;[![ANSYS][ansys-shield]][ansys-url]
@@ -85,11 +85,11 @@ Motivated aerospace engineering student with expertise in C++, MATLAB, and auton
 &nbsp;&nbsp;&nbsp;&nbsp;[![Python][python-shield]][python-url]
 &nbsp;&nbsp;&nbsp;&nbsp;[![Bash][bash-shield]][bash-url]
 
-* Highly Knowledgeable
+* Skilled
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![MATLAB][matlab-shield]][matlab-url]
 
-* On the docket
+* Planned
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![MySQL][sql-shield]][sql-url]
 &nbsp;&nbsp;&nbsp;&nbsp;[![htmx][htmx-shield]][htmx-url]
