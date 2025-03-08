@@ -1,0 +1,25 @@
+Test end reason: User stopped test
+
+Diameter:         5.6399999 mm
+Ext. gauge len:  12.6999998 mm
+Spec gauge len:  50.7999992 mm
+
+Number of data points: 760
+Format: point (n), displacement (mm), load (kN)
+
+Maximum Load point: 546
+Maximum Load:    1.86308 kN
+Maximum Extension point: 735
+Maximum Extension:    4.83105 mm
+
+Calculations from the machine:
+
+Maximum Load
+Load:    1.86300  kN
+Displacement:    0.78651  mm
+Strain:    6.19300  
+
+Break
+Load:    1.48300  kN
+Displacement:    1.43002  mm
+Strain:   11.26000  
