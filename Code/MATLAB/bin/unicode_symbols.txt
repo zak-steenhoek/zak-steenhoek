@@ -1,0 +1,97 @@
+#============================================= FILE HEADER =============================================
+# Title: symbols
+# File Type: Plaintext File (.txt)
+# Author: Zakary Steenhoek
+#
+# Created: March 2025
+# Updated: March 2025
+#
+# Purpose: Running list of unicode symbols for logging and display
+#
+#=======================================================================================================
+
+=== Status & Results ===
+✅ U+2705  White Heavy Check Mark
+❌ U+274C  Cross Mark
+⚠️  U+26A0  Warning Sign
+ℹ️  U+2139  Information Symbol
+❎ U+274E  Negative Squared Cross Mark
+✖️  U+2716  Heavy Multiplication X
+✗  U+2717  Ballot X
+☑️  U+2611  Ballot Box with Check
+
+=== Progress & Activity ===
+🔄 U+1F501  Clockwise Arrows (Reload / Refresh)
+🔃 U+1F503  Clockwise Arrows with Loop
+🔁 U+1F501  Repeat
+🕘 U+1F558  Clock Face Nine O’Clock (Session timing)
+🚀 U+1F680  Rocket (Startup/Launch)
+⌛ U+231B   Hourglass
+⏳ U+23F3   Hourglass with Flowing Sand
+
+=== Prompts & Interactions ===
+💡 U+1F4A1  Light Bulb (Tips / Hints)
+📌 U+1F4CC  Pushpin (Pinned notes)
+❓ U+2753  Question Mark
+👉 U+1F449  Finger Pointing (Guidance)
+📝 U+1F4DD  Memo (Editable / Notes)
+
+=== Folders & Files ===
+📁 U+1F4C1  File Folder
+📂 U+1F4C2  Open Folder
+📄 U+1F4C4  Document
+🗃️  U+1F5C3  File Box
+🗂️  U+1F5C2  File Organizer
+
+=== Arrows & Navigation ===
+➡️  U+27A1   Right Arrow
+⬅️  U+2B05   Left Arrow
+⬆️  U+2B06   Up Arrow
+⬇️  U+2B07   Down Arrow
+↩️  U+21A9   Return
+↪️  U+21AA   Forward/Redirect
+⤴️  U+2934   Up-Right Arrow
+⤵️  U+2935   Down-Right Arrow
+
+=== Math ===
+±  U+00B1   Plus-minus
+×  U+00D7   Multiplication
+÷  U+00F7   Division
+√  U+221A   Square Root
+∞  U+221E   Infinity
+≈  U+2248   Approximately Equal
+≠  U+2260   Not Equal
+≤  U+2264   Less Than or Equal
+≥  U+2265   Greater Than or Equal
+∑  U+2211   Summation
+∏  U+220F   Product
+∫  U+222B   Integral
+∂  U+2202   Partial Derivative
+∇  U+2207   Nabla (Gradient)
+
+=== Currency ===
+$  U+0024   Dollar
+€  U+20AC   Euro
+£  U+00A3   Pound
+¥  U+00A5   Yen
+₿  U+20BF   Bitcoin
+₽  U+20BD   Ruble
+₹  U+20B9   Indian Rupee
+₩  U+20A9   Won
+
+=== Boxes & Bars ===
+▁ ▂ ▃ ▄ ▅ ▆ ▇ █  Block Levels (U+2581–U+2588)
+━ ━━ ━━━     Emphasis bars
+═ ══ ═══     Box drawing lines
+────────────── Separator
+
+=== Emojis ===
+😄 U+1F604  Smiling Face with Open Mouth
+😎 U+1F60E  Smiling Face with Sunglasses
+🔥 U+1F525  Fire (Hot Tip / Success)
+🎯 U+1F3AF  Direct Hit (Goal Met)
+🧠 U+1F9E0  Brain (Smart Logic)
+📈 U+1F4C8  Upward Trend
+📉 U+1F4C9  Downward Trend
+🎉 U+1F389  Party Popper (Success)
+💻 U+1F4BB  Laptop (Coding)

@@ -109,7 +109,13 @@ shopt -s cdspell
 # alias du='du -h'
 #
 
-# Some aliases for different directory listings
+# Exported variables
+export ME="/cygdrive/c/Users/zaste/OneDrive/"
+export WE="/cygdrive/c/_Common/"
+export MAT_DIR="/cygdrive/c/Users/zaste/OneDrive/Software/MATLAB"
+export SEM_DIR="/cygdrive/c/Users/zaste/OneDrive/Documents/School/Junior/Spring"
+
+# Some aliases for directory operations
 alias ll='ls -l'                                # long list
 alias llr='ls -lR'								# long list, recursive
 alias lla='ls --format=vertical -lA'			# long list, all but [. ..]
@@ -127,122 +133,117 @@ alias src='source ~/.bashrc'
 #   source "${HOME}/.bash_functions"
 # fi
 	
-	# Open a file with Notepad++
-	npp() {
-		local file="$1"
-		/cygdrive/c/Program\ Files/Notepad++/notepad++.exe "$(cygpath -w "$file")" > /home/zaste/.gbg.txt  2>&1
+	# Change directory and list the files within
+	cdl() {
+		cd "$@" && lla
 	}
 	
 	# Navigate to the local C:/<User>/ directory
 	toC() {
-		cd /cygdrive/c/Users/zaste
-		ll
+		cdl /cygdrive/c/Users/zaste
 	}
 	
 	# Navigate to personal OneDrive directory
 	toMe() {
-		cd /cygdrive/c/Users/zaste/OneDrive/
-		ll
+		cdl /cygdrive/c/Users/zaste/OneDrive/
 	}
 	
 	# Navigate to the commons
 	toWe() {
-		cd /cygdrive/c/_Common
-		ll
+		cdl /cygdrive/c/_Common/zak-steenhoek
 	}
 	
-	# Creates a new bash file with header in the current or specified dir
-	newBash() {
-		# Grab specified location, if provided, as well as current working dir
-		local target_path=${1:-$(pwd)}
-		local current_path=$(pwd)
-		
-		# Run location of this MakeNew script, currently lives in ~/bin
-		~/bin/MakeNewBash.bash $target_path
-		
-		# Return to calling dir
-		cd $current_path
+	# Open a file with Notepad++
+	npp() {
+		local file="$1"
+		(/cygdrive/c/Program\ Files/Notepad++/notepad++.exe "$(cygpath -w "$file")" &>/dev/null &)
 	}
 	
-	# Creates a new text file with header in the current or specified dir
-	newTxt() {
-		# Grab specified location, if provided, as well as current working dir
-		local target_path=${1:-$(pwd)}
-		local current_path=$(pwd)
-		
-		# Run location of this MakeNew script, currently lives in ~/bin
-		~/bin/MakeNewText.bash $target_path
-		
-		# Return to calling dir
-		cd $current_path
+	# Open a file in MATLAB
+	mat() {
+		local file="$1"
+		# echo "lol u thought"
+		cscript.exe //nologo "C:\\cygwin\\home\\zaste\\bin\\OpenMatFile.vbs" "$(cygpath -w "$file")"
+		#(cscript.exe //nologo "~/bin/OpenMatFile.vbs" "$(cygpath -w "$file")" &>/dev/null &) &>/dev/null
 	}
 	
-	# Creates a new MATLAB function with header in the default or specified dir
-	newMatF() {
-		# ROOT_PATH: MATLAB functions dir
-		local ROOT_PATH="/cygdrive/c/Users/zaste/OneDrive/Software/MATLAB/functions"
-		
-		# Grab specified location, if provided, as well as current working dir
-		if [ -n "$1" ]; then
-			local target_path="${ROOT_PATH}/$1"
-		else
-			local target_path="${ROOT_PATH}/bin"
+	findme() {
+		local search_pattern="$1"
+    
+		# Use find to get the full path of the file (case-insensitive)
+		local filepath=$(find "$(pwd)" -type f -iname "*$search_pattern*" | head -n 1)
+
+		if [ -z "$filepath" ]; then
+			echo "No file matching '$search_pattern' found."
+			return 1
 		fi
-		local current_path=$(pwd)
-		
-		# Run location of this MakeNew script, currently lives in ~/bin
-		~/bin/MakeNewMATLABFunc.bash $target_path
-		
-		# Return to calling dir
-		cd $current_path
-	}
-	
-	# Creates a new MATLAB script with header in the default or specified dir
-	newMatS() {
-		# ROOT_PATH: MATLAB software dir
-		local ROOT_PATH="/cygdrive/c/Users/zaste/OneDrive/Software/MATLAB"
-		
-		# Grab specified location, if provided, as well as current working dir
-		if [ -n "$1" ]; then
-			local target_path="${ROOT_PATH}/$1"
+
+		echo "Found you: $filepath"
+
+		read -p "Jump to file location? Y/N [N]: " -n 1 -r
+		echo
+
+		if [[ "$REPLY" =~ ^[Yy]$ ]]; then
+			local dirpath=$(dirname "$filepath")
+			echo "Changing directory to: $dirpath"
+			cd "$dirpath" || echo "Error: Could not change directory."
 		else
-			local target_path="${ROOT_PATH}/bin"
+			echo "Staying in current directory."
 		fi
-		local current_path=$(pwd)
-		
-		# Run location of this MakeNew script, currently lives in ~/bin
-		~/bin/MakeNewMATLABScript.bash $target_path
-		
-		# Return to calling dir
-		cd $current_path
 	}
 	
-	# Creates a new C++ file with header in the current or specified dir
-	newCpp() {
-		# Grab specified location, if provided, as well as current working dir
-		local target_path=${1:-$(pwd)}
-		local current_path=$(pwd)
-		
-		# Run location of this MakeNew script, currently lives in ~/bin
-		#~/Common/Scripts/MakeNew<what>.bash $target_path
-		echo "Function not implimented yet..."
-		
-		# Return to calling dir
-		cd $current_path
+	# Creates a new custom file 
+	nFile() {
+		local filename extension target_path
+		read -rp "Enter file name (no extension): " filename
+		read -rp "Enter desired file extension (without .): " extension
+		read -rp "Enter target path [default: current dir]: " target_path
+		target_path=${target_path:-$(pwd)}
+		~/bin/MakeNewFile.sh custom "$filename" "$target_path" "$extension"
 	}
 	
-	# Creates a new Python file with header in the current or specified dir
-	newPy() {
-		# Grab specified location, if provided, as well as current working dir
-		local target_path=${1:-$(pwd)}
-		local current_path=$(pwd)
-		
-		# Run location of this MakeNew script, currently lives in ~/bin
-		#~/Common/Scripts/MakeNew<what>.bash $target_path
-		echo "Function not implimented yet..."
-		
-		# Return to calling dir
-		cd $current_path
+	# Creates a new shell script
+	nShell() {
+		local filename
+		read -rp "Enter shell script name: " filename
+		~/bin/MakeNewFile.sh shell "$filename"
+	}
+	
+	# Creates a new text file 
+	nTxt() {
+		local filename
+		read -rp "Enter text file name: " filename
+		~/bin/MakeNewFile.sh text "$filename"
+	}
+	
+	# Creates a new MATLAB function 
+	nMatF() {
+		local filename
+		read -rp "Enter MATLAB function name: " filename
+		~/bin/MakeNewFile.sh matfunc "$filename"
+	}
+	
+	# Creates a new MATLAB script 
+	nMatS() {
+		local filename
+		read -rp "Enter MATLAB script name: " filename
+		~/bin/MakeNewFile.sh matscript "$filename"
+	}
+	
+	# Creates a new C++ file 
+	nCpp() {
+		local filename
+		read -rp "Enter C++ file name: " filename
+		# ~/bin/MakeNewFile.sh cpp "$filename"
+		echo "Not done yet..."
+	}
+	
+	# Creates a new Python file 
+	nPy() {
+		local filename
+		read -rp "Enter Python script name: " filename
+		# ~/bin/MakeNewFile.sh pyscript "$filename"
+		echo "Not done yet..."
 	}
 	
 # Some example functions:
