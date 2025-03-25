@@ -3,7 +3,7 @@
 % Created: November 2024
 % Updated: February 2025
 
-function autosave(figName, localPath, itt, type)
+function autosave(figName, figPath, itt, type)
 %AUTOSAVE saves open figures to specified directory in high res.
 %   AUTOSAVE(FIGNAME, LOCALPATH, ITT, TYPE) will save open figures in high
 %   resolution without distortion. It will close all of the figures 
@@ -32,17 +32,14 @@ if (~exist('type', 'var'))
     type = 'png';
 end
 
-% Build full path
-figDir = buildPath(localPath);
-
 % Save figure(s)
 if itt
     for i = 1:length(h)
         fullName = strcat(figName,num2str(i));
-        saveas(gcf, fullfile(figDir, fullName{1}), type);
+        saveas(gcf, fullfile(figPath, fullName{1}), type);
         close(gcf);
     end
 else
-    saveas(gcf, fullfile(figDir, figName), type);
+    saveas(gcf, fullfile(figPath, figName), type);
     close(gcf);
 end

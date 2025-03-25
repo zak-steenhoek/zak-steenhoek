@@ -1,7 +1,7 @@
 %% Header
 % Author: Zakary Steenhoek
 % Created: January 2025
-% Updated: February 2025
+% Updated: March 2025
 
 function [fullPath] = buildPath(leaf, root)
 %BUILDPATH builds the full path to a file or directory
@@ -17,15 +17,44 @@ function [fullPath] = buildPath(leaf, root)
 %   The full path string, FULLPATH
 %
 
-% Root path to MATLAB folder lives here
-rootPath = '<lol>';
+% Argument validation
+arguments (Input)
+    % Must be string
+    leaf string 
 
-% Determine HERE, ROOT
-if (~exist('root', 'var'))
-    root = rootPath;
+    % Must be string
+    root string = 'C:\Users\zaste\OneDrive\Software\MATLAB'
 end
+
+arguments (Output)
+    % Must be a valid folder or file
+    fullPath {mustBeFolderorFile}
+end
+
+% Options vars
+% NONE
+
+%% Body
 
 % Build path
-fullPath = strcat(root,leaf);
+fullPath = fullfile(root,leaf);
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

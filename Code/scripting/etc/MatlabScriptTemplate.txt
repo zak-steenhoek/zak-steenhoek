@@ -1,0 +1,27 @@
+%% Header
+% Author: {{AUTHOR}}
+% Date: {{DATE}}
+% Title: {{FILENAME}}
+% Purpose: <documentation>
+
+% Reset: 
+clear; clc;
+
+%% Setup
+
+% Variables
+syms 
+
+% Equations
+
+% Functions
+
+
+%% Body
+
+%
+
+%% Plots
+
+%
+

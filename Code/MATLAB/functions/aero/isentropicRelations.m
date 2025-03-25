@@ -1,76 +1,75 @@
 %% Header
 % Author: Zakary Steenhoek
 % Created: January 2025
-% Updated: February 2025
+% Updated: March 2025
 
 function [ratios] = isentropicRelations(M,opts)
 %ISENTROPICRELATIONS calculates total flow properties
-%   [T0RATIO,P0RATIO,D0RATIO] = ISENTROPICRELATIONS(M,OPTS)
-%   Returns total property ratios in an isentropic, compressible flow
-%   regime. Total properties are those of the fluid if it were
-%   isentropically reduced to stagnation, and give an idea of the total
-%   fluid energy. These relations are necessary as the flow approaches
-%   or exceeds the upper limit of incompressibility and property changes
-%   are no longer negligible.
-%
-% Options:
-%   Unless otherwise specified: GAMMA defaults to calorically perfect air.
-%   The ratios are not displayed in the command window. All three ratios
-%   are returned as [TR,PR,DR] = [1,2,3]
+%   [RATIOS] = ISENTROPICRELATIONS(M,OPTS) returns total property ratios 
+%   in an isentropic, compressible flow regime. Total properties are those
+%   of the fluid if it were isentropically reduced to stagnation, and give 
+%   an idea of the total fluid energy. These relations are necessary as 
+%   the flow approaches or exceeds the upper limit of incompressibility 
+%   and property changes are no longer negligible.
 %
 % Input:
-%   Local Mach number: M
-%   OPT: Ratio of specific heats: gamma; DEF: 1.4
-%   OPT: Display in command window: disp; DEF: logical 0
-%   OPT: Single relation: onlyOne; DEF: 0
+%   M: double - Local Mach number
+% 
+% Options:
+%   gamma: double - Ratio of specific heats. Default = 1.4 (air)
+%   verbose: logical - Display results in command window. Default = false
+%   single: int in [0,1,2,3] - If 1: T0/T, 2: p0/p, 3: rho0/rho. Default = 0
 %
 % Output:
-%   Total temperature ratio: T0/T
-%   Total pressure ratio: p0/p
-%   Total density ratio: rho0/rho
+%   output : struct OR scalar depending on opts.single
+%       If opts.single == 0:
+%           temperatureRatio: T0/T
+%           pressureRatio: p0/p
+%           densityRatio: rho0/rho
+%       Else: Selected scalar ratio
 %
 
-% Check valid call
-arguments
-    % Must be numeric
-    M double
-
-    % Must be numeric; Def = 1.4
-    opts.gamma double = 1.4
-
-    % Must be logical; Def = 0
-    opts.disp logical = 0
-
-    % Must be +int [0 3]; Def = 0
-    opts.single {mustBeInRange(opts.single,0,3)} = 0
+%% Argument validation
+arguments (Input)
+    M double {mustBeNumeric, mustBeFinite, mustBeNonnegative}
+    opts.gamma double {mustBePositive} = 1.4
+    opts.verbose logical = false
+    opts.single {mustBeMember(opts.single, 0:3)} = 0
 end
 
-% Set args
+% Assign options
 gamma = opts.gamma;
+verbose = opts.verbose;
+select = opts.single;
+
+%% Body
 
 % Compute ratios
-T0R = (1+((gamma-1)./2).*M.^2);
-P0R = (1+((gamma-1)./2).*M.^2).^(gamma./(gamma-1));
-D0R = (1+((gamma-1)./2).*M.^2).^(1/(gamma-1));
+T0_T = (1+((gamma-1)./2).*M.^2);
+p0_p = (1+((gamma-1)./2).*M.^2).^(gamma./(gamma-1));
+rho0_rho = (1+((gamma-1)./2).*M.^2).^(1/(gamma-1));
 
-% Return condition
-if (opts.single ~= 0)
-    if (opts.single == 1)
-        ratios = T0R;
-    elseif (opts.single == 2)
-        ratios = P0R;
-    else
-        ratios = D0R;
-    end
+%% Display
+if verbose
+    fprintf('Isentropic Property Ratios for M = %.3f, gamma = %.3f\n', M, gamma);
+    fprintf('  Total Temperature Ratio (T0/T) : %.4f\n', T0_T);
+    fprintf('  Total Pressure Ratio (p0/p)    : %.4f\n', p0_p);
+    fprintf('  Total Density Ratio (rho0/rho) : %.4f\n', rho0_rho);
+end
+
+%% Output
+if select == 1
+    ratios = T0_T;
+elseif select == 2
+    ratios = p0_p;
+elseif select == 3
+    ratios = rho0_rho;
 else
-    ratios = [T0R, P0R, D0R];
+    ratios = struct( ...
+        'temperatureRatio', T0_T, ...
+        'pressureRatio', p0_p, ...
+        'densityRatio', rho0_rho ...
+    );
 end
 
-% Display
-if opts.disp
-    fprintf('For M = %2.2f and gamma = %2.3f:\n', M, gamma);
-    fprintf('Total temperature ratio: %.4f\n', T0Ratio);
-    fprintf('Total pressure ratio: %.4f\n', P0Ratio);
-    fprintf('Total density ratio: %.4f\n', D0Ratio);
-end
 end
